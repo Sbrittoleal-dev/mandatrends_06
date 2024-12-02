@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,91 +8,157 @@
         <style>
             body {
                 margin: 0;
-                padding: 0;
+                padding: 0 10px;
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
+                background-color: #f2f2f2;
             }
 
-            table {
-                width: 100%;
+            .email-container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                overflow: hidden;
+                table-layout: fixed;
                 border-spacing: 0;
+                border-collapse: collapse;
             }
 
-            td {
-                padding: 10px;
+            .small-container{
+                width: 100%;
+                overflow: hidden;
+                table-layout: fixed;
+                border-spacing: 0;
+                border-collapse: collapse;
             }
 
-            .email-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
-        }
 
-        .header {
-            background-color: #4CAF50;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        /* Seções internas */
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .content h2 {
-            font-size: 20px;
-            color: #333333;
-        }
-
-        .content p {
-            font-size: 16px;
-            color: #666666;
-            line-height: 1.5;
-        }
-
-        .button {
-            background-color: #4CAF50;
-            color: #ffffff;
-            padding: 12px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        /* Estilos para dispositivos móveis */
-        @media only screen and (max-width: 600px) {
-            .email-container {
-                width: 100% !important;
+            .header {
+                width:100%;
+                padding: 0 10px;
             }
 
-            .header h1 {
-                font-size: 20px;
+            
+            .header a {
+                width: 100%;
             }
 
-            .content h2 {
-                font-size: 18px;
+            .header img {
+                width: 100%;
             }
 
-            .content p {
+            .content {
+                width: 100%;
+                padding: 0 20px;
+            }
+
+            .content img{
+                width: 100%;
+            }
+
+            .content_small {
+                width: 50%;
+                padding: 0 20px 0 10px;
+            }
+
+            .content_small--first{
+                width: 50%;
+                padding: 0 10px 0 20px;
+            }
+
+            .content_small img,
+            .content_small--first img{
+                width: 100%;
+            }
+
+
+            .content h1 {
+                font-size: 24px;
+                color: #231f20;
+            }
+
+            .content h2{
                 font-size: 14px;
+                color: #74787a
             }
 
-            .button {
-                padding: 10px 15px;
+            .content_small h2,
+            .content_small--first h2 {
+                font-size: 18px;
+                color: #231f20;
             }
-        }
+
+            .content p,
+            .content_small p,
+            .content_small--first p {
+                font-size: 11px;
+                color: #b2b2b2;
+            }
+
+            .footer img{
+                width: 100%;
+            }
+
+            .fundo{
+                background-color: #f2f2f2;
+            }
+
+            .fundo p{
+                font-size: 11px;
+                color:#646869;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
-        
+        <table role="presentation" class="email-container">
+            <tr>
+                <td class="header">
+                    <a href="https://mandarin.com.br/"><img src="01.header_mandatrends06.png"></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="content">
+                    <a href="https://mandarin.com.br/"><img src="link1.png"></a>
+                    <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
+                    <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</h2>
+                    <p><a href="https://mandarin.com.br/">Fonte: CMO ADOBE</a></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table role="presentation" class="small-container">
+                        
+                        <tr>
+                            <td class="content_small--first">
+                                <a href="https://mandarin.com.br/"><img src="link2.png"></a>
+                                <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
+                                <p><a href="https://mandarin.com.br/">Fonte: Daily Mail</a></p>
+                            </td>
+
+                            <td class="content_small">
+                                <a href="https://mandarin.com.br/"><img src="link3.png"></a>
+                                <h2>WhatsApp terá função de pagamentos em 2020.</h2>
+                                <p><a href="https://mandarin.com.br/">Fonte: Proxxima</a></p>
+                            </td>
+
+                        
+                        </tr>
+                    </table> 
+                </td>
+            </tr>
+            <tr>
+                <td class="footer">
+                    <a href="https://mandarin.com.br/"><img src="02.footer_mandatrends.png"></a>
+                </td>
+            </tr>  
+            <tr>
+                <td class="fundo">
+                    <p>Copyright&reg; Mandarin. Todos os direitos reservados.</p>
+                    <p>Caso não deseje mais receber nossos e-mails, por favor <a href="https://mandarin.com.br/">clique aqui.</a></p>
+                </td>
+            </tr>   
+        </table>
     </body>
 </html>
